@@ -1,0 +1,5 @@
+{
+  "name": "Gesture UNO",
+  "description": "Play UNO using hand gestures via webcam.",
+  "requestFramePermissions": ["camera"]
+}
