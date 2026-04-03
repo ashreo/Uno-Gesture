@@ -23,7 +23,7 @@ UNO Vision 是一个完全**基于手势控制**的 UNO 卡牌游戏，利用计
 4. **出牌**：保持捏合状态，将卡牌拖拽至画面中央的“弃牌堆”上方，然后**松开双指**完成出牌！
 5. 如果你没有合适的牌出，可以点击/悬停到牌堆上摸牌。
 
-## 🚀 本地运行
+## 🚀 本地运行与部署
 
 **前置要求:** Node.js (推荐 v18+)
 
@@ -44,6 +44,15 @@ UNO Vision 是一个完全**基于手势控制**的 UNO 卡牌游戏，利用计
    ```
 
 4. 在浏览器中访问 `http://localhost:3000` 体验游戏！
+
+### 🌐 部署到 GitHub Pages
+
+本项目已配置了自动部署到 GitHub Pages 的 GitHub Actions 工作流。只需执行以下步骤即可部署：
+
+1. 确保项目的 `next.config.ts` 中设置了正确的 `basePath` 和 `assetPrefix` (已配置为 `/Uno-Gesture`)，并将 `output` 设置为 `'export'`。
+2. 将代码推送到 GitHub 的 `main` 分支，GitHub Actions 将会自动触发构建和部署流程。
+3. 在你的 GitHub 仓库的 **Settings > Pages** 中，确保 "Build and deployment" 的 "Source" 设置为 **GitHub Actions**。
+4. 等待 Action 运行完毕后，访问 `https://<你的用户名>.github.io/Uno-Gesture` 即可体验。
 
 ## 🛠️ 技术栈
 
